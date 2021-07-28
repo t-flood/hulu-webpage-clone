@@ -88,6 +88,17 @@ h4 {
   text-decoration: underline;
 }
 
+.text-xl {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.sub-text {
+  max-width: 850px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
 .header {
   height: 530px;
   background: url(../img/header.jpg) no-repeat center center / cover;
@@ -152,6 +163,51 @@ h4 {
 
 .sub-header > div:last-of-type .sub-link {
   text-align: center;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 90px 40px;
+}
+.categories .covers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.categories .cover-grad {
+  background: linear-gradient(
+      152.82deg,
+      rgba(0, 0, 0, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.cover-1 {
+  background: url("../img/cover-1.jpg") no-repeat center center / cover;
+}
+
+.cover-2 {
+  background: url("../img/cover-2.jpg") no-repeat center center / cover;
+}
+
+.cover-3 {
+  background: url("../img/cover-3.jpg") no-repeat center center / cover;
+}
+
+.cover-4 {
+  background: url("../img/cover-4.jpg") no-repeat center center / cover;
+}
+
+.categories .covers > div {
+  height: 500px;
+  width: 300px;
+  position: relative;
 }
 
 @media (max-width: 768px) {
